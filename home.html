@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari's Portfolio</title>
+    <link rel="icon" type="image/png" href="./Homeimages/online-resume.png" sizes="512x512">
+    <link rel="stylesheet" href="./home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <nav class="navbar">
+        <i class='bx bx-menu' id="menu-icon"></i>  
+        <ul class="nav-main">
+            <a href="./home.html"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="./service.html"><li>Services</li></a>
+            <a href="./crafted.html"><li>Crafted Creations</li></a>
+            <a href="./contact.html"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <h1>Hi, I'm Hariharan</h1>
+
+                <h3>Turning Your Vision into a Virtual Experience</h3>
+                <p>Crafting visually stunning, responsive websites and unique, impactful logos that elevate your brand identity. Let’s turn your vision into a powerful digital experience! From concept to creation, I bring your ideas to life with tailored solutions that resonate with your audience and drive results.</p>
+                <a href="./contact.html"><button class="service-btn">Get a Service</button></a>
+                <div class="header-icons">
+                    <a href="https://www.linkedin.com/in/haranharis20122002/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/hariharan6369000975" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/hari____333/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+            <div class="header-img2">
+                <img src="./Homeimages/Homeimage.jpg" alt="Header Image">
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Personal Overview</h2>
+                <p>I'm <strong>Hariharan</strong>,Grauduated in <strong>Electronics and Communication Systems</strong> from Sastra Deemed to be University. Throughout my journey, I've honed my skills in <strong>Core Java, SQL, HTML, CSS, JavaScript</strong>, and frameworks like <strong>Spring</strong> and <strong>React.js</strong>. My expertise also extends to <strong>version control</strong> using Git and GitHub.</p>
+                <p>Currently, I've ventured into <strong>freelancing</strong>, specializing in <strong>website development</strong> and <strong>logo design</strong>. I’m passionate about turning ideas into reality through engaging, functional digital experiences. Let's collaborate and build something extraordinary!</p>
+                <a href="./contact.html"><button>Get In Touch</button></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-left">
+                <h3>Book a Service</h3>
+                <p>If you're looking for a custom website or logo design, you're in the right place! I specialize in creating visually appealing and highly functional digital experiences.</p>
+                <p>Get in touch with me to start discussing how we can turn your ideas into reality. Whether it's a full website, logo design, or consultation, I'd love to hear from you!</p>
+                <ul class="contact-benefits">
+                    <li>Responsive website designs tailored to your brand</li>
+                    <li>Unique logo creations that stand out</li>
+                    <li>Consulting for enhancing your digital presence</li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <form class="service-form" action="https://formspree.io/f/xnnakykl" method="POST" id="contact-form">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="service">Service Needed:</label>
+                    <select id="service" name="service" required>
+                        <option value="web-development" style="color: black;">Website Development</option>
+                        <option value="logo-design" style="color: black;">Logo Design</option>
+                        <option value="consulting" style="color: black;">Consultation</option>
+                    </select>
+                    
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us more about your project" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="response-message" style="display:none;"></div>
+            </div>                   
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-right">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                       <a href="./home.html">Home</a>
+                       <a href="#about">About</a>
+                       <a href="./service.html">Services</a>
+                       <a href="./crafted.html">Crafted Creations</a>
+                       <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-left">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <p>Email: <a href="mailto:haranharis20122002@gmail.com">hariharan@example.com</a></p>
+                    <p>Phone: 636-900-0975</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Me</h3>
+                    <p>
+                        <a href="https://www.linkedin.com/in/haranharis20122002/" target="_blank">LinkedIn</a> |
+                        <a href="https://github.com/hariharan6369000975" target="_blank">GitHub</a> |
+                        <a href="https://www.instagram.com/hari____333/" target="_blank">Instagram</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Hariharan. All Rights Reserved.</p>
+            <p>Let’s Create Something Extraordinary Together!</p>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const responseMessage = document.getElementById('response-message');
+        const submitButton = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    
+                    submitButton.textContent = 'Thanks For Booking';
+                    responseMessage.style.display = 'block';
+                    responseMessage.textContent = ''; 
+                    form.reset(); 
+                    
+                    setTimeout(() => {
+                        submitButton.textContent = 'Submit';
+                    }, 4000); 
+                } else {
+                    responseMessage.style.display = 'block';
+                    responseMessage.textContent = 'Oops! There was a problem submitting the form.';
+                }
+            }).catch(error => {
+                responseMessage.style.display = 'block';
+                responseMessage.textContent = 'Oops! There was a problem submitting the form.';
+            });
+        });
+
+        const menuIcon = document.getElementById('menu-icon');
+        const navMain = document.querySelector('.nav-main');
+            
+        
+        menuIcon.addEventListener('click', () => {
+            navMain.classList.toggle('show');
+        });
+        
+    
+        const navItems = document.querySelectorAll('.nav-main a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navMain.classList.remove('show');
+            });
+        });
+
+    </script>
+</body>
+</html>
